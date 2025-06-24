@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class=" flex ">
+
+    <!-- LEFT SIDE -->
+
+    <section class="leftSecReg w-1/4 hidden md:block">
+
+        <div class="leftImgD w-full h-fit">
+
+            <img src="assets/images/sigimg0.png" alt="image" 
+             class="leftImg hidden md:block w-full object-contain">
+
+        </div>
+        
+    </section>
+
+    <!-- RIGHT SIDE -->
+
+    <section class="rightSecReg w-full md:w-3/4 ">
+
+        <div class="rightImgD ">
+
+            <img src="assets/images/sigimg0 - Copy.png" alt="image" 
+            class="rightImg  block md:hidden object-contain w-xs ">
+
+        </div>
+
+        <h6 class="rightHt text-center text-2xl">Register</h6>
+
+        <div class="regD w-fit rounded-2xl shadow-[1px_10px_30px_-10px_black]">
+
+            <label class="text-sm" for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter Name" class="rightInp w-3xs sm:w-sm bg-white rounded-sm text-base">
+
+            <br>
+
+            <label class="text-sm" for="email">Email Address:</label><br>
+            <input type="text" id="email" placeholder="Enter Email Address" class="rightInp w-3xs sm:w-sm bg-white rounded-sm text-base">
+
+            <br>
+
+            <label class="text-sm" for="password">Password:</label><br>
+            <input type="text" id="password" placeholder="Enter Password" class="rightInp w-3xs sm:w-sm bg-white rounded-sm text-base">
+
+            <br>
+
+            <label class="text-sm" for="confirmPass">Confirm Password:</label><br>
+            <input type="text" id="confirmPass" placeholder="Confirm Password" class="rightInp w-3xs sm:w-sm bg-white rounded-sm text-base">
+
+            <br>
+
+            <input type="submit" value="Create Account" class="inpBtn w-3xs sm:w-sm text-white text-center rounded-sm text-base">
+        </div>
+        
+    </section>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0px solid black;
+}
+
+
+
+.leftSecReg{
+    background-color: rgb(59, 132, 216);
+}
+
+.leftImg{
+    height: 99vh;
+}
+
+.rightSecReg{
+    background-image: url(assets/images/spec.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 50px;
+    
+}
+
+.rightImgD{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.regD{
+     margin: auto;
+     padding: 30px 50px;
+     margin-bottom: 30px;
+} 
+
+.rightHt{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.rightInp{
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+.inpBtn{
+    background-color: rgb(3, 122, 240);
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+@media (min-width: 340px) and (max-width: 767px){
+
+    .rightHt{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+}
+
+@media (min-width: 340px) and (max-width: 470px){
+
+    .rightInp, .inpBtn{
+    width: 160px;
+    font-size: 14px;
+
+}
+    
+    .rightInp{
+    padding: 2px 0px 2px 10px;
+    }
+
+    .inpBtn{
+    padding: 2px 0px;
+
+}
+
+    .regD{
+     padding: 30px 30px;
+} 
+}
+
+@media (min-width: 390px) and (max-width: 470px){
+
+    .rightInp, .inpBtn{
+    width: 220px;
+    }
+
+}
