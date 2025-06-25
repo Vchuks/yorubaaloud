@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,16 +7,17 @@
     border: 0px solid black;
 }
 
+body{
+     background-color: rgb(59, 132, 216);
+}
 
 
+/* LEFT */
 .leftSecReg{
     background-color: rgb(59, 132, 216);
 }
 
-.leftImg{
-    height: 99vh;
-}
-
+/* RIGHT */
 .rightSecReg{
     background-image: url(assets/images/spec.png);
     background-repeat: no-repeat;
@@ -37,33 +40,43 @@
 } 
 
 .rightHt{
+    font-family: "Sono", monospace;
     margin-top: 50px;
     margin-bottom: 40px;
 }
 
+label{
+    font-family: "Sono", monospace;
+}
+
 .rightInp{
+    font-family: "Sono", monospace;
+    color: black;
     padding: 5px 0px 5px 10px;
     margin: 10px 0px;
 }
 
 .inpBtn{
+    font-family: "Sono", monospace;
     background-color: rgb(3, 122, 240);
     margin-top: 2.5px;
     margin-bottom: 5px;
     padding: 5px 0;
 }
 
-@media (min-width: 340px) and (max-width: 767px){
+
+                                  /* RESPONSIVENESS */
+
+
+@media (min-width: 300px) and (max-width: 767px){
 
     .rightHt{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
 }
 
-@media (min-width: 340px) and (max-width: 470px){
+@media (min-width: 300px) and (max-width: 470px){
 
     .rightInp, .inpBtn{
     width: 160px;
@@ -90,5 +103,29 @@
     .rightInp, .inpBtn{
     width: 220px;
     }
+
+}
+
+/* LOGIN PAGE */
+
+.regLink{
+    font-family: "Sono", monospace;
+    color: rgb(0, 81, 255);
+    font-weight: 500;
+    margin-bottom: 200px;
+}
+
+.loginRightInp{
+    font-family: "Sono", monospace;
+    color: rgb(0, 0, 0);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+@media (min-width: 300px) and (max-width: 920px){
+
+    /* .regLink{
+    margin-bottom: 20px;
+} */
 
 }
