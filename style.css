@@ -128,7 +128,7 @@ label{
 
 .dashLeftSec{
     background-color: rgb(58, 132, 216);
-    padding: 0px 0px 100px 0px;
+    padding: 0px 0px 211px 0px;
 }
 
 .hTextD{
@@ -181,7 +181,7 @@ label{
 }
 
 .mainBox{
-    margin: 25px 0px 0px 26px;
+    margin: 25px 0px;
     row-gap: 25px;
     column-gap: 40px;
 }
@@ -191,19 +191,56 @@ label{
     width: 275px;
 }
 
-      .boxes:hover{
-        background-color: rgb(243, 243, 243);
-      }
-
 .nv2{
     margin-top: 10px;
     margin-bottom: 25px;
 }
 
 .nv22D{
-    padding: 10px 5px;
+    padding: 15px 5px;
     margin-left: 5px;
     margin-top: 18px;
+    margin-bottom: 40px;
     background-color: rgb(35, 112, 253);
 }
+
+.dash3rdSec{
+    margin-left: 27px;
+    padding-bottom: 59px;
+}
+
+.dash3rdSec1{
+    background-color: rgb(121, 244, 127);
+    column-gap: 1.5px;
+    margin-bottom: 20px;
+}
+
+.d3SD{
+    background-color: rgb(58, 132, 216);
+    margin-top: 0.66px;
+}
+
+.d3St{
+    font-family: "Sono", monospace;
+}
     
+.d3S1{
+    margin-left: 2.4px;
+    padding: 10px 5px;
+}
+
+.d3S2{
+    padding: 10px 5px;
+}
+
+.d3S3{
+    padding: 10px 5px;
+}
+
+.d3S4{
+    padding: 10px 5px;
+}
+
+.d3S5{
+    padding: 10px 5px;
+}
