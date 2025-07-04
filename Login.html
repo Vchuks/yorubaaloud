@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="loginBody flex">
@@ -47,7 +51,9 @@
 
                   <br>
 
-                  <input type="submit" value="Login" class="inpBtn w-sm text-white text-center rounded-sm text-base">
+                  <button type="button" onclick="loginUser(event)" class="inpBtn w-sm text-white text-center rounded-sm text-base">
+                    <img src="assets/Icons/icons8-spinner-50.png" alt="spinner" id="spinImg" class=" animate-spin hidden">
+                    Login</button>
               </div>
 
               <a href="register.html" class="regLink">Register here</a>
