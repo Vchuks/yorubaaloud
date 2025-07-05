@@ -160,6 +160,10 @@ function loginUser(event){
     fetch(`${baseUrl}admin_login`, apiObjDetails2)
     .then((response)=> response.json())
     .then((result2) => {
+
+                                                  /* since we can't get the token directly from the response, we 
+                                                     should get it from our storage by first setting it there*/
+                                                     
                 localStorage.setItem("theResult", JSON.stringify(result2));
                 let getTheResult = localStorage.getItem("theResult");
                 let convertTheResult = JSON.parse(getTheResult);
@@ -222,4 +226,123 @@ menuBtn2.addEventListener("click", menuSlideOut);
 
 function menuSlideOut(){
     slideBar.classList.remove("slide");
+}
+
+
+                      // BOXES
+
+const boxItems = [
+    {  id: 1,
+       image: "./assets/Icons/grid-circle-diagonal-left.png",
+       title: "Total Categories",
+       totalNum: 0
+    },
+    {  id: 2,
+       image: "./assets/Icons/tv.png",
+       title: "Learning Materials",
+       totalNum: 0
+    },
+    {  id: 3,
+       image: "./assets/Icons/grid-alt-solid-24.png",
+       title: "Total Subcategories",
+       totalNum: 0
+    },
+    {  id: 4,
+       image: "./assets/Icons/question-mark-regular-24.png",
+       title: "Total Quiz",
+       totalNum: 0
+    },
+    {  id: 5,
+       image: "./assets/Icons/user.png",
+       title: "Total Students",
+       totalNum: 0
+    },
+    {  id: 6,
+       title: "Top three students"
+    }
+]
+
+           // function and loop to loop through the array holding details for each box
+
+function boxFunction(){
+    const mainBox = document.getElementsByClassName("mainBox")[0];
+    boxItems.forEach((items)=>{
+      
+        if (items.hasOwnProperty("image")){
+        mainBox.innerHTML +=  
+                               `<div class="boxes shadow-[1px_10px_30px_-20px_black] rounded-md">
+                             <img src=${items.image} alt="Icon for categories" class="dashIcons nv22Pic object-contain">
+                             <h6  class="navText nv2 text-base text-black font-normal">${items.title}</h6>
+                             <h6 id=${`${items.id}`} class="boxNum text-base text-black font-normal">${items.totalNum}</h6>
+                                </div>`
+        }else{
+            mainBox.innerHTML += 
+                        `<div class="boxes shadow-[1px_10px_30px_-20px_black] rounded-md">
+                            <div class="nv22D rounded-lg">
+                                <h6  class="navText nv22 text-base text-white font-normal">${items.title}</h6>
+                            </div>
+                         </div>`                     
+        }
+})
+}
+boxFunction()
+
+
+// FETCH DATA FOR DASHBOARD
+
+
+                                     // get token function
+                                     function getToken(key){
+                                         const getData = localStorage.getItem(key);
+                                         const pasrseData = JSON.parse(getData);
+                                         theToken = pasrseData.token;
+                                     
+                                         return theToken
+                                     }
+
+       //function to fetch data for dashboard  
+       
+const navUserName = document.getElementsByClassName("navHtext")[0]; // nav header
+
+async function getDashboardDetails(){
+
+const getMyHeaders = new Headers();
+getMyHeaders.append("Authorization", `Bearer ${getToken("theResult")}`);
+
+const docDetails = {
+    method: "GET",
+    headers: getMyHeaders
+}
+
+const fetchData = await fetch(`${baseUrl}admin/admin_dashboardapi`, docDetails)
+const result3 = await fetchData.json()
+
+       const getId1 = document.getElementById("1");
+       getId1.innerText = result3.total_number_of_categories;
+
+       const getId2 = document.getElementById("2");
+       getId2.innerText = result3.total_number_of_learningmaterial;
+
+       const getId3 = document.getElementById("3");
+       getId3.innerText = result3.total_number_of_subcategories;
+
+       const getId4 = document.getElementById("4");
+       getId4.innerText = result3.total_number_of_quize;
+
+       const getId5 = document.getElementById("5");
+       getId5.innerText = result3.total_number_of_students;
+
+       navUserName.innerText = result3.admin_name
+
+}
+getDashboardDetails()
+
+// logout from dashboard function
+
+function logoutUser(){
+   localStorage.clear();
+
+   setTimeout(() => {
+   window.location.href = "login.html";
+   }, 1000);
 }
