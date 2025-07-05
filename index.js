@@ -160,17 +160,21 @@ function loginUser(event){
     fetch(`${baseUrl}admin_login`, apiObjDetails2)
     .then((response)=> response.json())
     .then((result2) => {
-                   if(result2.status === "success"){
+                localStorage.setItem("theResult", JSON.stringify(result2));
+                let getTheResult = localStorage.getItem("theResult");
+                let convertTheResult = JSON.parse(getTheResult);
+         
+                   if(convertTheResult.hasOwnProperty("token")){
     
                        Swal.fire({
                        title: 'Success',
-                       text: `${result2.message}`,
+                       text: `Welcome to your dashboard`,
                        icon: 'success',
                        confirmButtonText: `You're good to go`
                        })
                
                        setTimeout(() => {
-                       location.href = "dashboard.html";
+                       window.location.href = "dashboard.html";
                        }, 3000);
                    }
                    else{
