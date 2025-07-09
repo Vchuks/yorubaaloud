@@ -328,10 +328,9 @@ label{
                                 color: rgb(25, 119, 227);
                             }
 
-
-
-
-
+.tbTagEmail{
+    word-break: break-word;
+}
 
 .dash3rdSec1{
     width: 84%;
@@ -352,6 +351,8 @@ label{
 }
 
 .thTags2{
+    padding-left: 16px;
+    padding-right: 16px;
     width: 25%;
 }
 
@@ -451,6 +452,10 @@ label{
 .modalContainer{
 width: 90%;
 left: 5%;
+}
+
+.tbTags, .thTags{
+    font-size: 10px;
 }
 }
 
