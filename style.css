@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0px solid black;
+}
+
+.regBody, .loginBody{
+     background-color: rgb(59, 132, 216);
+     background-color: rgb(58, 132, 216)
+}
+
+
+/* LEFT */
+.leftSecReg{
+    background-color: rgb(59, 132, 216);
+    background-color: rgb(58, 132, 216);
+}
+
+/* RIGHT */
+.rightSecReg{
+    background-image: url(assets/images/spec.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 50px;
+    
+}
+
+.rightImgD{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.regD{
+     margin: auto;
+     padding: 30px 50px;
+     margin-bottom: 30px;
+} 
+
+.rightHt{
+    font-family: "Sono", monospace;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+label{
+    font-family: "Sono", monospace;
+}
+
+.rightInp{
+    font-family: "Sono", monospace;
+    color: black;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+.inpBtn{
+    font-family: "Sono", monospace;
+    background-color: rgb(3, 122, 240);
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+#spinImg{
+    width:  25px;
+    height: 25px;
+    
+}
+
+
+                                  /* RESPONSIVENESS */
+
+
+@media (max-width: 767px){
+
+    .rightHt{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 640px){
+
+    .rightSecReg{
+    padding: 0px 20px;
+}
+
+    .rightImg{
+    width: 220px;
+
+    }
+}
+
+@media (max-width: 550px){
+
+    .rightInp, .inpBtn{
+    width: 100%;
+
+}
+
+    .regD{
+    width: 90%;
+    padding: 30px 30px;
+} 
+}
+
+@media (max-width: 485px){
+
+    .regD{
+    width: 100%;
+} 
+}
+
+
+/* LOGIN PAGE */
+
+.regLink{
+    font-family: "Sono", monospace;
+    color: rgb(0, 81, 255);
+    font-weight: 500;
+    margin-bottom: 200px;
+}
+
+.loginRightInp{
+    font-family: "Sono", monospace;
+    color: rgb(0, 0, 0);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+
+
+/* DASHBOARD PAGE */
+
+.dashLeftSec{
+    background-color: rgb(58, 132, 216);
+    padding: 24px 0px 211px 0px;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+                                         
+
+.menu-icon2{
+    margin-top: -5px;
+}
+
+.hTextD{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.dashIcons{
+    width: 30px;
+    height: 30px;
+}
+
+.navInT{
+    margin-left: 17px;
+    padding: 10px 0px 10px 9px;
+}
+
+           .navInT:hover{
+               background-color: white;
+               border-start-start-radius: 30px;
+               border-end-start-radius: 30px;
+               gap: 32px;
+           }
+
+.hText, .navHtext, .navText, .boxNum{
+    font-family: "Sono", monospace;
+}
+
+           .navInT:hover .navText{
+                color: rgb(121, 244, 127);
+                font-weight: 600;
+                cursor: pointer;
+           }
+
+
+/* right */
+
+.dashRightSec{
+    width: 75%;
+    margin-left: 25%;
+    z-index: 0;
+}
+
+.navHtext{
+    margin-right: 20px;
+}
+
+.navBar{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+.menu-icon{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.mainBox{
+    margin: 25px 0px;
+    row-gap: 25px;
+    column-gap: 40px;
+}
+
+.boxes{
+    padding: 15px 15px 20px 10px;
+    width: 275px;
+}
+
+.nv2{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.nv22Btn{
+    padding: 15px 5px;
+    width: 98%;
+    margin-left: 5px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    background-color: rgb(35, 112, 253);
+    cursor: pointer;
+}
+
+.nv22Btn:hover{
+    background-color: rgb(8, 67, 176);
+}
+
+                            .modalContainer{
+                                width: 50%;
+                                height: 50%;
+                                position: absolute;
+                                top: 40%;
+                                left: 27%;
+                                background-color: white;
+                                overflow: auto;
+                                z-index: 0;
+                                display: none;
+                            }
+                                   .modalContainer::-webkit-scrollbar{
+                                    display: none;
+                                   }
+                            
+                            .modalHd{
+                                background-color: rgb(25, 119, 227);
+                                padding: 8px 8px;
+                                position: sticky;
+                                top: 0;
+                                z-index: 1;
+                            }
+                            
+                            .modalH, .modalExit{
+                                font-family: "Sono", monospace;
+                            }
+
+                            .modalExit{
+                                cursor: pointer;
+                            }
+
+                            .modalContainer2{
+                                padding: 15px 15px;
+                            }
+
+                            .modalInfoBox{
+                                margin-bottom: 0px;
+                                padding: 10px 15px 15px 15px;
+                                z-index: 0;
+                            }
+
+                            .infoTd{
+                                width: 100%;
+                            }
+
+                            .infoT1, .infoT2{
+                                font-family: "Sono", monospace;
+                                margin-bottom: 10px;
+                            }
+
+                            .infoT1{
+                                color: rgb(25, 119, 227);
+                            }
+
+.tbTagEmail{
+    word-break: break-word;
+}
+
+.dash3rdSec1{
+    width: 84%;
+    margin-left: 25px;
+}
+
+.thTags{
+   background-color: rgb(58, 132, 216);
+   padding: 10px 5px;
+   font-family: "Sono", monospace;
+   border: 2px solid rgb(121, 244, 127);
+   border-top: 0px;
+}
+    
+.thTags1{
+    margin-left: 2.4px;
+    width: 25%;
+}
+
+.thTags2{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 25%;
+}
+
+.thTags3{
+    width: 20%;
+}
+
+.thTags4{
+    width: 15%;
+}
+
+.thTags5{
+    width: 15%;
+}
+
+.tbTags{
+   padding: 10px 5px;
+   font-family: "Sono", monospace;
+   border: 2px solid rgb(121, 244, 127);
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1240px){
+
+    .modalContainer{
+    top: 65%;
+    }
+
+}
+
+@media (max-width: 900px){
+
+    .menu1{
+    display: none;
+    }
+
+    .menu2, .menu22{
+    display: block;
+    cursor: pointer;
+    }
+
+    
+    .dashLeftSec{
+    position: fixed;
+    top: 0;
+    left: -225px;
+    transition: 0.5s ease;
+    z-index: 2;
+    }
+
+
+    .dashLeftSec.slide{
+    width: 35%;
+    left: 0px;
+    
+    }
+
+    .dashRightSec{
+    width: 100%;
+    margin-left: 0;
+    }
+
+    .modalContainer{
+    width: 60%;
+    top: 70%;
+    left: 20%;
+    }
+}
+                       @media (max-width: 750px){
+    
+                       .dashLeftSec.slide{
+                       width: 45%;
+                       }
+
+                       .modalContainer{
+                       width: 70%;
+                       left: 15%;
+                       }
+                       }
+                    
+
+
+@media (max-width: 721px){
+    
+    .dash3rdSec{
+    margin-right: 20px;
+}
+}
+
+@media (max-width: 600px){
+
+.modalContainer{
+width: 90%;
+left: 5%;
+}
+
+.tbTags, .thTags{
+    font-size: 10px;
+}
+}
+
+@media (max-width: 589px){
+
+.modalContainer{
+top: 200%;
+}
+}
+
+
+                        @media (max-width: 570px){
+    
+                       .dashLeftSec.slide{
+                       width: 50%;
+                       }
+                       }
+
+
+                       @media (max-width: 515px){
+    
+                       .dashLeftSec.slide{
+                       width: 60%;
+                       }
+                       }
+
+@media (max-width: 450px){
+    
+.modalContainer{
+width: 95%;
+left: 2.5%;
+}
+
+.infoTd{
+display: block;
+}
+}
+
+                       @media (max-width: 430px){
+    
+                       .dashLeftSec.slide{
+                       width: 80%;
+                       }
+                       }

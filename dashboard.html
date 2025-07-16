@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body  class="h-full flex">
+    
+    <!-- LEFT SIDE -->
+    <section id="dashLeftS" class="dashLeftSec ">
+                <div class=" flex justify-between hTextD">
+                    <h6 id="hTextt"  class="hText text-base text-white font-normal">Yoruba Aloud</h6>
+
+                    <button type="button"  class=" menu-icon2 ">
+                        <!-- <img src="assets/Icons/menu-regular-24 - Copy2.png" alt="Menu icon" id="menu11" class="menu11 hidden"> -->
+                        <img src="assets/Icons/menu-regular-24 - Copy.png" alt="Menu icon" id="menu22" class="menu22 hidden">
+                        </button>
+                </div>
+                
+                <div class="navInT flex items-center gap-5">
+                    <img src="assets/Icons/home-alt.png" alt="Home icon" class="dashIcons object-contain">
+                    <h6 href=""  class="navText navTx2 text-base text-white font-normal">Dashboard</h6>
+                </div>
+                <div class="navInT flex items-center gap-5">
+                    <img src="assets/Icons/grid-circle-diagonal-left.png" alt="Icon for categories" class="dashIcons object-contain">
+                    <h6 href=""  class="navText navTx2 text-base text-white font-normal">Categories</h6>
+                </div>
+                <div class="navInT flex items-center gap-4">
+                    <img src="assets/Icons/tv.png" alt="Tv icon" class="dashIcons object-contain">
+                    <h6 href="" class="navText navTx2 text-base text-white font-normal">Learning Materials</h6>
+                </div>
+                <div class="navInT flex items-center gap-5">
+                    <img src="assets/Icons/question-mark-regular-24.png" alt="Question mark icon" class="dashIcons object-contain">
+                    <h6 href="" class="navText navTx2 text-base text-white font-normal">Quiz</h6>
+                </div>
+                <div class="navInT flex items-center gap-5">
+                    <img src="assets/Icons/user.png" alt="Profile icon" class="dashIcons object-contain">
+                    <h6 href="" class="navText navTx2 text-base text-white font-normal">Admin Profile</h6>
+                </div>
+                <div class="navInT flex items-center gap-5">
+                    <img src="assets/Icons/log-out-regular-24.png" alt="Logout icon" class="dashIcons object-contain">
+                    <h6 onclick="logoutUser()" href="" class="navText navTx2 text-base text-white font-normal">Logout</h6>
+                </div>
+
+    </section>
+
+    <!-- RIGHT SIDE -->
+     <section id="dashRightS" class="dashRightSec ">
+        
+                <!-- nav -->
+                <nav id="navBar" class="navBar flex items-center shadow-[1px_10px_30px_-20px_black]">
+                        <button type="button"  class=" menu-icon">
+                        <img src="assets/Icons/menu-regular-24.png" alt="Menu icon" id="menu1" class="menu1">
+                        <img src="assets/Icons/menu-regular-24 - Copy.png" alt="Menu icon" id="menu2" class="menu2 hidden">
+                        </button>
+        
+                    <h6 class="navHtext text-2xl">test@mail.com</h6>
+
+                </nav>
+            
+                <!-- boxes -->
+                 <section class="mainBox flex flex-wrap justify-center align-center">
+                 <!-- Boxes were created in javascript -->
+                 </section>
+
+                 <!-- MODAL POP-UP -->
+
+                 <section class="modalContainer rounded-md shadow-[1px_10px_30px_-10px_black]">
+                     <div class="modalHd flex justify-between rounded-t-md">
+                        <h6 class="modalH font-normal text-xl text-white">Top three students</h6>
+                        <button onclick="modalPopOut()" class="modalExit font-normal text-xl text-white">x</button>
+                     </div>
+                             
+                 </section>
+        
+                            <table  class="dash3rdSec1 shadow-[1px_10px_30px_-10px_black] rounded-md">
+                                <thead>
+                                    <tr>
+                                        <th  class="thTags thTags1 font-normal text-center text-sm text-white rounded-ss-sm">Name</th>
+                                        <th  class="thTags thTags2 font-normal text-center text-sm text-white">Email</th>
+                                        <th  class="thTags thTags3 font-normal text-center text-sm text-white">Phone Number</th>
+                                        <th  class="thTags thTags4 font-normal text-center text-sm text-white">Position</th>
+                                        <th  class="thTags thTags5 font-normal text-center text-sm text-white rounded-se-sm">Total Score</th>
+                                    </tr>
+                                </thead>
+                            </table>
+
+
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

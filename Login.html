@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loginBody flex">
+
+    <!-- LEFT SIDE -->
+
+    <section class="leftSecReg w-1/4 hidden md:block">
+
+              <div class="leftImgD w-full h-fit">
+      
+                  <img src="assets/images/Welcome - Copy2.png" alt="image" 
+                   class="leftImg hidden md:block w-full object-contain">
+      
+              </div>
+        
+    </section>
+
+    <!-- RIGHT SIDE -->
+
+    <section class="rightSecReg w-full md:w-3/4 ">
+
+              <div class="rightImgD ">
+
+                  <img src="assets/images/welcomeCopy.png" alt="image" 
+                  class="rightImg  block md:hidden object-contain w-xs ">
+
+              </div>
+
+              <h6 class="rightHt text-center text-2xl">Login</h6>
+
+              <div class="regD w-fit rounded-2xl shadow-[1px_10px_30px_-10px_black]">
+
+                  <label class="text-sm" for="email">Email Address:</label><br>
+                  <input type="email" id="email" placeholder="Enter Email Adress" class="rightInp loginRightInp w-sm bg-white rounded-sm text-base">
+
+                  <br>
+
+                  <label class="text-sm" for="password">Password:</label><br>
+                  <input type="password" id="password" placeholder="Enter Password" class="rightInp w-sm bg-white rounded-sm text-base">
+
+                  <br>
+
+                  <button type="button" onclick="loginUser(event)" class="inpBtn w-sm text-white text-center rounded-sm text-base">
+                    <img src="assets/Icons/icons8-spinner-50.png" alt="spinner" id="spinImg" class=" animate-spin hidden">
+                    Login</button>
+              </div>
+
+              <a href="register.html" class="regLink">Register here</a>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    </section>
+
+
+<script src="index.js"></script>
+</body>
+</html>
