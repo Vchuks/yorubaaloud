@@ -139,7 +139,7 @@ label{
 
 .dashLeftSec{
     background-color: rgb(58, 132, 216);
-    padding: 24px 0px 211px 0px;
+    padding: 24px 0px 0px 0px;
     height: 100%;
     width: 25%;
     position: fixed;
@@ -349,7 +349,7 @@ label{
 @media (max-width: 1240px){
 
     .modalContainer{
-    top: 65%;
+    /* top: 65%; */
     }
 
 }
@@ -388,7 +388,7 @@ label{
 
     .modalContainer{
     width: 60%;
-    top: 70%;
+    /* top: 100%; */
     left: 20%;
     }
 }
@@ -428,7 +428,7 @@ left: 5%;
 @media (max-width: 589px){
 
 .modalContainer{
-/* top: 165%; */
+/* top: 200%; */
 }
 }
 
