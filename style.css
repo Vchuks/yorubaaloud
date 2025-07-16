@@ -140,40 +140,12 @@ label{
 .dashLeftSec{
     background-color: rgb(58, 132, 216);
     padding: 24px 0px 211px 0px;
-    width: 7%;
+    width: 25%;
     position: fixed;
     top: 0;
     left: 0;
 }
-                                         /* toggle side-bar */
-
-                                          .dashLeftSec.half1{
-                                              width: 25%;
-                                              transition: 0.5s ease;
-                                              padding: 0px 0px 211px 0px;
-                                          }
-                                          
-                                          .dashRightSec.half2{
-                                              width: 75%;
-                                              margin-left: 25%;
-                                              transition: 0.5s ease;
-                                          }
-                                          
-                                          .navTx2.half3{
-                                              display: block;
-                                              transition: 0.5s ease;
-                                          }
-
-                                          .hText.half4{
-                                            display: block;
-                                            transition: 0.5s ease;
-                                         }
-
-                                         .menu11.half5{
-                                            display: block;
-                                            transition: 0.5s ease;
-                                            cursor: pointer;
-                                         }
+                                         
 
 .menu-icon2{
     margin-top: -5px;
@@ -181,6 +153,7 @@ label{
 
 .hTextD{
     margin-top: 30px;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
 
@@ -211,17 +184,12 @@ label{
                 cursor: pointer;
            }
 
-.hText, .navTx2{
-    margin-left: 30px;
-    display: none;
-}
-
 
 /* right */
 
 .dashRightSec{
-    width: 93%;
-    margin-left: 7%;
+    width: 75%;
+    margin-left: 25%;
     z-index: 0;
 }
 
@@ -387,7 +355,7 @@ label{
 
 @media (max-width: 900px){
 
-    .menu1, .menu11{
+    .menu1{
     display: none;
     }
 
@@ -405,9 +373,6 @@ label{
     z-index: 2;
     }
 
-    .navTx2, .hText{
-    display: block;
-}
 
     .dashLeftSec.slide{
     width: 35%;

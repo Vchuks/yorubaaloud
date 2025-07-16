@@ -230,37 +230,6 @@ function menuSlideOut(){
 }
 
 
-                       //  NAVBAR SLIDE at before 900px
-const navTx = document.getElementsByClassName("navTx2");
-const hText = document.getElementById("hTextt");
-const slideSide = document.getElementById("dashRightS");
-const menuBtn3 = document.getElementById("menu1");
-const menuBtn4 = document.getElementById("menu11");
-
-menuBtn3.addEventListener("click", halfNavBar);
-
-function halfNavBar(){
-      
-    slideBar.classList.add("half1");
-    slideSide.classList.add("half2");
-    navTx.classList.add("half3");
-    hText.classList.add("half4");
-    menuBtn4.classList.add("half5");
-}
-
-menuBtn4.addEventListener("click", fullNavBar);
-
-function fullNavBar(){
-      
-    slideBar.classList.remove("half1");
-    slideSide.classList.remove("half2");
-    navTx.classList.remove("half3");
-    hText.classList.remove("half4");
-    menuBtn4.classList.remove("half5");
-}
-
-
-
 
                       // BOXES
 
