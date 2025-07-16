@@ -139,7 +139,7 @@ label{
 
 .dashLeftSec{
     background-color: rgb(58, 132, 216);
-    padding: 24px 0px 0px 0px;
+    padding: 24px 0px 211px 0px;
     height: 100%;
     width: 25%;
     position: fixed;
@@ -244,14 +244,14 @@ label{
 }
 
                             .modalContainer{
-                                width: 50%;
-                                height: 50%;
-                                position: absolute;
-                                top: 40%;
-                                left: 27%;
+                                width: 60%;
+                                height: 80%;
+                                position: fixed;
+                                top: 17%;
+                                left: 20%;
                                 background-color: white;
                                 overflow: auto;
-                                z-index: 0;
+                                z-index: 1;
                                 display: none;
                             }
                                    .modalContainer::-webkit-scrollbar{
@@ -346,14 +346,6 @@ label{
 
 /* RESPONSIVENESS */
 
-@media (max-width: 1240px){
-
-    .modalContainer{
-    /* top: 65%; */
-    }
-
-}
-
 @media (max-width: 900px){
 
     .menu1{
@@ -387,20 +379,16 @@ label{
     }
 
     .modalContainer{
-    width: 60%;
-    /* top: 100%; */
-    left: 20%;
+    width: 100%;
+    height: 100%;
+    top: 0%; 
+    left: 0%;
     }
 }
                        @media (max-width: 750px){
     
                        .dashLeftSec.slide{
                        width: 45%;
-                       }
-
-                       .modalContainer{
-                       width: 70%;
-                       left: 15%;
                        }
                        }
                     
@@ -415,23 +403,10 @@ label{
 
 @media (max-width: 600px){
 
-.modalContainer{
-width: 90%;
-left: 5%;
-}
-
 .tbTags, .thTags{
     font-size: 10px;
 }
 }
-
-@media (max-width: 589px){
-
-.modalContainer{
-/* top: 200%; */
-}
-}
-
 
                         @media (max-width: 570px){
     
@@ -450,11 +425,6 @@ left: 5%;
 
 @media (max-width: 450px){
     
-.modalContainer{
-width: 95%;
-left: 2.5%;
-}
-
 .infoTd{
 display: block;
 }
