@@ -2,7 +2,7 @@
 Go through the readme file.
 
 # Project Stack
-### For css use tailwind
+### For css use bootstrap/tailwind
 
 
 # Steps
@@ -17,7 +17,7 @@ Go through the readme file.
 
 ## The User Interface (UI)
 There are three images in the images folder which are login UI, registerUI and dashboardUI.<br>
-Replicate those that a user will be going from registering  to logging in and then viewing the different data on the dashboard.
+Replicate these, such that a user will be going from registering  to logging in and then viewing the different data on the dashboard.
 
 
 
